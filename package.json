@@ -1,0 +1,29 @@
+{
+  "name": "dojo-node-webkit",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "grunt start",
+    "patch": "cd node_modules/level/node_modules/leveldown/ && nw-gyp rebuild --target=0.7.2",
+    "install": "grunt install"
+  },
+  "author": "Kyle Robinson Young",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.3.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-clean": "~0.5.0"
+  },
+  "dependencies": {},
+  "window": {
+    "title": "DojoNodeWebkit",
+    "width": 800,
+    "height": 600,
+    "frame": true,
+    "kiosk": false,
+    "toolbar": true
+  }
+}
